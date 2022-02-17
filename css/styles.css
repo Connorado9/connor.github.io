@@ -1,0 +1,41 @@
+
+
+
+/*
+.fancy-button {
+  color: #FFFFFF;
+  background-color: #dc5b5d;
+  border: none;
+  padding: 13px 20px;
+  font-size: 20px;
+  border-radius: 10px 10px;
+  margin-left: 0px;
+  font-family: 'Raleway', sans-serif
+  transition: background-color 100ms ease-in-out, margin 1s ease-in-out; /* ease-out, linear */
+/*
+}
+
+
+.moved {
+  margin-top: 200 px;
+  padding-left: 200 px;
+}
+
+.fancy-button:hover {
+  color: #FFFFFF;
+  background-color: black;
+}
+
+
+.fancy-header:hover .hidden-thing {
+  display: block;
+}
+
+.hidden-thing{
+  display: none;
+  background-color: pink;
+}
+*/
+
+/* css also has keyframes and stuff */
+/* javascript lets you add and remove classes in real time, add new pages, games, etc */
