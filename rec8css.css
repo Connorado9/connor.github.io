@@ -1,0 +1,70 @@
+
+/* anything <400px do this */
+@media (max-width: 400px) {
+  body {
+    background-color: yellow;
+  }
+  .container {
+    display: grid;
+    background-color: yellow;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr 1fr; /*fractional: 3 rows equal*/
+    /*grid-template-rows: 2fr 1fr 1fr /*fractional: 3 rows, first size 2*/
+    gap: 20px; /*gap between each item in grid*/
+  }
+  .header {
+    background-color: purple;
+  }
+  .toc {
+    background-color: red;
+  }
+  .content {
+    background-color: green;
+    text-align: center;
+  }
+  .mob-img {
+    width: 100px;
+    /*width: 50%*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/* anything >400px do this */
+@media (min-width: 401px) {
+  body {
+    background-color: pink;
+  }
+  .container {
+    display: grid;
+    background-color: pink;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr 1fr; /*fractional: 3 rows equal*/
+    grid-template-columns: 1fr 1fr 1fr; /*creating 3x3 grid*/
+    gap: 20px; /*gap between each item in grid*/
+  }
+  .header {
+    background-color: grey;
+    grid-column: 1 / 4;
+  }
+  .toc {
+    background-color: orange;
+    grid-row: 2 / 4;
+  }
+  .content {
+    background-color: cyan;
+    text-align: center;
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+  }
+  .mob-img {
+    width: 100px;
+    /*width: 50%*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
