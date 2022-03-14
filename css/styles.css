@@ -181,7 +181,7 @@ nav {
   .hero {
     position:relative;
     top:0;
-    height:100%;
+    height:926px;
   }
   .hero-image {
     position:relative;
@@ -189,10 +189,10 @@ nav {
     top:0px;
     /*height:-webkit-fill-available;
     height:-moz-available;*/
-    height:926px;
+    height:100vh;
     /*Landing Image*/
     background-image:url(../img/home/smallerme.jpg);
-    background-size:cover;
+    background-size:auto 100vh;
     background-position:center center;
     background-repeat:no-repeat;
     background-attachment:fixed;
