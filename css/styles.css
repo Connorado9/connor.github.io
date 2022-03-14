@@ -150,13 +150,13 @@ nav {
 
 
 /* LANDING */
-.hero {
-  position:relative;
-  top:0;
-  height:100vh;
-}
 @media (min-width:601px) /* for >600px */
 {
+  .hero {
+    position:relative;
+    top:0;
+    height:100vh;
+  }
   .hero-image {
     position:relative;
     overflow:hidden;
@@ -178,20 +178,27 @@ nav {
 }
 @media (max-width:600px) /* for <600px */
 {
+  .hero {
+    position:relative;
+    top:0;
+    height:100%;
+  }
   .hero-image {
     position:relative;
     overflow:hidden;
     top:0px;
-    /*height:-webkit-fill-available;
-    height:-moz-available;*/
-    height:1000px;
+    height:-webkit-fill-available;
+    height:-moz-available;
+    height:926px;
     /*Landing Image*/
-    background-image:url(../img/home/smallerme.jpg)!important;
+    background-image:url(../img/home/smallerme.jpg);
     background-size:cover;
     background-position:center center;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    min-height:1000px;
+    min-height:-webkit-fill-available;
+    min-height:-moz-available;
+    min-height:100%;
     z-index:-1;
   }
 }
