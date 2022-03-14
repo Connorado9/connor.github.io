@@ -9,10 +9,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Browser Title Bar -->
   <title>Project 1</title>
+  <!-- Fonts: Montserrat / Raleway / Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&family=Raleway:wght@300;400&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
   <!-- Main CSS -->
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="../../css/styles.css" type="text/css">
+  <!-- javascript -->
+  <script src="js/main.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class=nav-hide>
+    <a href="../../index.html" class="navbar-item">HOME</a>
+    <a href="../resume.html" class="navbar-item">RESUME</a>
+    <a href="../projects.html" class="navbar-item">PROJECTS</a>
+    <a href="project1.html" class="navbar-item hide-small">PROJECT1</a>
+    <a href="project2.html" class="navbar-item hide-small">PROJECT2</a>
+  </nav>
 
+  <!-- Project -->
+  <div class="prj1-landing">
+    <h3 class="prj2-landing-text">PROJECT ONE</h3>
+  </div>
+  <img src="../../img/prj1/GridMon_wide_2MB.png" alt="Photo of GridMon circuit boards" class="prj1-wide-img">
+  <div class="prj1-container">
+    <h2 class="id-space"><span class="id-first">ROLE: </span><span class="id-sec">HARDWARE ENGINEER</span></h2>
+    <h2 class="id-space"><span class="id-first">DATE: </span><span class="id-sec">APRIL 30, 2021</span></h2>
+    <h2 class="id-space"><span class="id-first">CLIENT: </span><span class="id-sec">AMAZON WEB SERVICES</span></h2>
+  </div>
+  <img src="../../img/prj1/GridMon_render.png" alt="Rendering of GridMon device" class="prj1-wide-img">
+  <div class="prj1-container">
+    <p class="prj1-text"> Amazon Web Services provides a highly scalable and low-cost cloud computing platform to hundreds of thousands of businesses and counting.
+        While AWS’s services are effortlessly expandable, the data centers that run them are not; in part because of an outdated cable-based energy monitoring system.
+        The current expensive, rigid and unscalable systems are subject to wasteful amounts of costly wiring, intermediate translators, pre-construction configuration requirements, and the legacy architecture inherent to cabled meters.
+        My job, along with my 5 teammates, was to build a better solution to these innefficiencies&#8212;all from scratch.
+    </p>
+  </div>
+  <img src="../../img/prj1/PRIM_Top.png" alt="Rendering of GridMon logic board" class="prj1-wide-img" style="width:96%!important;display:block;margin-left:auto!important;margin-right:auto!important;">
+  <img src="../../img/prj1/PWR_Top.png" alt="Rendering of GridMon power board" class="prj1-wide-img">
+  <div class="prj1-container">
+    <p class="prj1-text"> GridMon is an energy meter unlike any other.
+      In a nutshell, GridMon takes instantaneous power measurements like a digital multimeter with the additional ability to record total consumption.
+      Unlike a typical multimeter, however, the tool supports 3-phase monitoring with accuracies up to six decimal places after proper calibration, in addition to single-phase.
+      While multi-phase capabilities greatly expand the device’s utility, what makes GridMon truly special are its wireless features.
+      On-board Wi-Fi eliminates cables to seamlessly transmit data over the air.
+      Furthermore, an industry-grade GPS enables every GridMon to identify itself, even just a few servers away from other GridMons.
+      These innovations ultimately culminate in a streamlined user interface called Grafana where the information from an entire fleet of meters can populate as soon as they’re powered on.
+    </p>
+  </div>
+  <img src="../../img/prj1/Stratus_Logo.png" alt="Team Stratus logo" class="prj1-wide-img" style="width:96%!important;display:block;margin-left:auto!important;margin-right:auto!important;margin-bottom:30px;">
+
+
+
+  <!-- Footer -->
+  <footer class="pg-footer">
+    <hr class="foot-hr">
+    <div class="foot-container">
+      <a class="foot-text" href="https://www.linkedin.com/in/connor-humiston" target="_blank" rel="noopener noreferrer">LINKEDIN</a> <!-- JS here -->
+      <a class="foot-text" href="https://github.com/Connorado9" target="_blank" rel="noopener noreferrer">GITHUB</a> <!-- JS here -->
+      <a class="foot-text" href="https://www.instagram.com/connors.electronics/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a> <!-- JS here -->
+    </div>
+  </footer>
 </body>
 </html>

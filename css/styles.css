@@ -23,6 +23,7 @@ h2{
   letter-spacing:0.25em;
   background-color:inherit;
   color:#1B1B1B;
+  margin:0px;
 }
 h3{
   font-size:48px;
@@ -70,7 +71,7 @@ p {
   font-weight:300;
   letter-spacing:0.05em;
   background-color:inherit;
-  color:#1B1B1B;
+  color:#1E2024;
 }
 .p2 {
   font-size:18px!important;
@@ -135,6 +136,9 @@ nav {
   padding:8px 10px;
   text-align:center;
   z-index:999;
+}
+.nav-hide {
+  position:absolute;
 }
 .navbar-item {
   /*float:right;*/
@@ -489,5 +493,58 @@ nav {
   grid-column:2/5;
   grid-row:10/11;
 }
-
 /* END RESUME */
+
+
+/* PROJECT 1 */
+.prj1-landing {
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+.prj1-landing-text {
+  text-align:center;
+}
+.prj1-wide-img {
+  width:100%;
+}
+.prj1-container {
+  width:75%;
+  margin: 200px auto;
+}
+.id-space {
+  margin:10px 0px!important;
+}
+.id-first {
+  font-size:28px!important;
+  font-family:'Montserrat',sans-serif!important;
+  font-weight:400!important;
+  letter-spacing:0.15em!important;
+  background-color:inherit!important;
+  color:#1B1B1B!important;
+}
+.id-sec {
+  font-size:28px!important;
+  font-family:'Montserrat',sans-serif!important;
+  font-weight:700!important;
+  letter-spacing:0.15em!important;
+  background-color:inherit!important;
+  color:#1B1B1B!important;
+}
+.prj1-text {
+  line-height:30px;
+  color:#1E2024!important;
+}
+/* END PROJECT 1 */
+
+
+/* PROJECT 2 */
+.prj2-landing {
+  height:100vh;
+}
+.prj2-landing-text {
+  text-align:center;
+}
+/* END PROJECT 2 */
