@@ -192,7 +192,7 @@ nav {
     height:100vh;
     /*Landing Image*/
     background-image:url(../img/home/smallerme.jpg);
-    background-size:auto 100vh;
+    background-size:auto 100%;
     background-position:center center;
     background-repeat:no-repeat;
     background-attachment:fixed;
