@@ -149,17 +149,15 @@ nav {
   position:relative;
   top:0;
   height:100vh;
-  min-height: -webkit-fill-available;
-  height: -moz-available; 
-  height: -webkit-fill-available;
 }
 .hero-image {
   position:relative;
   overflow:hidden;
   top:0px;
-  height:100vh!important;
+  height: calc(100vh - calc(100vh - 100%));
+  /*height:100vh!important;
   height: -moz-available;          /* WebKit-based browsers will ignore this. */
-  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  /*height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
   /*width:100vw;*/
   /*Landing Image*/
   background-image:url(../img/home/me.jpg);
@@ -169,16 +167,16 @@ nav {
   background-attachment:fixed;
   min-height:100%;
   z-index:-1;
-}
+}/*
 @media screen and (max-width: 800px) /* for <800px */
-{
+/*{
   .hero-image {
     background-image:url(../img/home/smallerme.jpg)!important;
     min-height: -webkit-fill-available;
     height: -moz-available!important;
     height: -webkit-fill-available!important;
   }
-}
+}*/
 .landing-text {
   display:block;
   font-size:4.6vw!important;
