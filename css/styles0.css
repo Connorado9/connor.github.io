@@ -218,7 +218,7 @@ p {
   }
 }
 
-/* anything >993px do this */
+/* anything >900px do this */
 @media (min-width:900px)
 {
   .wrapper {
