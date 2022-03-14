@@ -154,6 +154,8 @@ nav {
   overflow:hidden;
   top:0px;
   height:100vh!important;
+  height: -moz-available;          /* WebKit-based browsers will ignore this. */
+  height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
   width:100vw;
   /*Landing Image*/
   background-image:url(../img/me.jpg);
