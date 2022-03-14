@@ -149,6 +149,9 @@ nav {
   position:relative;
   top:0;
   height:100vh;
+  min-height: -webkit-fill-available;
+  height: -moz-available; 
+  height: -webkit-fill-available;
 }
 .hero-image {
   position:relative;
@@ -167,10 +170,13 @@ nav {
   min-height:100%;
   z-index:-1;
 }
-@media screen and (max-width: 800px)
+@media screen and (max-width: 800px) /* for <800px */
 {
-  .landing-wrapper {
-    background-image:url(../img/home/smallerme.jpg);
+  .hero-image {
+    background-image:url(../img/home/smallerme.jpg)!important;
+    min-height: -webkit-fill-available;
+    height: -moz-available!important;
+    height: -webkit-fill-available!important;
   }
 }
 .landing-text {
