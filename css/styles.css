@@ -106,6 +106,17 @@ a:active { /* a link the moment it is clicked */
 /* END GENERAL */
 
 
+/* RESPONSIVE DESIGN */
+@media (max-width:600px) /* for <600px */
+{
+  .hide-small {
+    display:none!important;
+  }
+}
+
+/* END RESPONSIVE DESIGN */
+
+
 /* NAVBAR */
 nav {
   position:fixed;
@@ -116,7 +127,7 @@ nav {
   overflow:hidden;
   padding:8px 10px;
   text-align:center;
-  /*z-index:1;*/
+  z-index:999;
 }
 .navbar-item {
   /*float:right;*/
@@ -126,16 +137,34 @@ nav {
   text-decoration:none!important;
   background-color:inherit;
   color:inherit;
-  padding:8px 16px;
+  padding:8px 10px;
   display:inline-block;
   text-align:center;
 }
 /* END NAVBAR */
 
 
-
 /* LANDING */
-
+.landing-wrapper{
+  position:relative;
+}
+.landing-image {
+  width:100%;
+  height:100%;
+  z-index:0;
+}
+.landing-text {
+  font-size:4vw!important;
+  text-align:center!important;
+  letter-spacing:0.25em;
+  background-color:transparent;
+  color:#FFFFFF;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  white-space:nowrap;
+}
 /* END LANDING */
 
 
