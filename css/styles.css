@@ -28,9 +28,9 @@ h3{
   color:#1B1B1B;
 }
 h4{
-  font-size:36px;
+  font-size:28px;
   font-family:'Montserrat',sans-serif;
-  font-weight:300;
+  font-weight:200;
   letter-spacing:0.25em;
   background-color:inherit;
   color:#1B1B1B;
@@ -44,9 +44,9 @@ h5{
   color:#1B1B1B;
 }
 h6{
-  font-size:28px;
+  font-size:22px;
   font-family:'Roboto',sans-serif;
-  font-weight:300;
+  font-weight:100;
   letter-spacing:0.05em;
   background-color:inherit;
   color:#1B1B1B;
@@ -59,7 +59,7 @@ h6{
   color:#1B1B1B;
 }
 p {
-  font-size:28px;
+  font-size:18px;
   font-family:'Raleway',sans-serif;
   font-weight:300;
   letter-spacing:0.05em;
@@ -67,7 +67,7 @@ p {
   color:#1B1B1B;
 }
 .p2 {
-  font-size:28px!important;
+  font-size:18px!important;
   font-family:'Raleway',sans-serif!important;
   font-weight:400!important;
   letter-spacing:0.05em!important;
@@ -75,7 +75,7 @@ p {
   color:#1E2024!important;
 }
 .p3 {
-  font-size:28px!important;
+  font-size:18px!important;
   font-family:'Roboto',sans-serif!important;
   font-weight:300!important;
   background-color:inherit!important;
@@ -113,7 +113,6 @@ a:active { /* a link the moment it is clicked */
     display:none!important;
   }
 }
-
 /* END RESPONSIVE DESIGN */
 
 
@@ -145,16 +144,35 @@ nav {
 
 
 /* LANDING */
-.landing-wrapper{
+.hero {
   position:relative;
+  top:0;
+  height:100vh;
 }
-.landing-image {
-  width:100%;
-  height:100%;
-  z-index:0;
+.hero-image {
+  position:relative;
+  overflow:hidden;
+  top:0px;
+  height:100vh!important;
+  width:100vw;
+  /*Landing Image*/
+  background-image:url(../img/me.jpg);
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height:100%;
+  z-index:-1;
+}
+@media screen and (max-width: 800px)
+{
+  .landing-wrapper {
+    background-image:url(../img/smallerme.jpg);
+  }
 }
 .landing-text {
-  font-size:4vw!important;
+  display:block;
+  font-size:4.6vw!important;
   text-align:center!important;
   letter-spacing:0.25em;
   background-color:transparent;
@@ -168,12 +186,109 @@ nav {
 /* END LANDING */
 
 
-/* PROJECTS SECTION */
+/* CONTENT */
+.page-content {
+  margin-left:auto;
+  margin-right:auto;
+  max-width:1000px;
+}
+.container {
+  margin:100px 50px;
+  position:static;
+}
+.section-header {
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.line{
+  border:1px solid #1B1B1B!important;
+  display: block;
+  width:50px;
+}
+.section-subheader {
+  text-align:center;
+  margin-top:30px;
+  margin-bottom:40px;
+}
+/* HOMEPAGE CONTENT */
 
+
+/* ABOUT SECTION */
+.about-text {
+  text-align:center;
+  background-color:inherit;
+  color:#3B3B3B;
+}
+/* END ABOUT SECTION */
+
+
+/* PROJECTS SECTION */
+.prj-list-container {
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:30px;
+  margin-bottom:40px;
+}
+.prj-sel {
+  font-size:22px;
+  font-family:'Roboto',sans-serif;
+  font-weight:100;
+  letter-spacing:0.05em;
+  background-color:inherit;
+  color:#1B1B1B;
+  margin:10px 30px;
+  display:inline-block;
+  text-decoration:none!important;
+  flex-wrap:wrap;
+}
+@media (max-width:601px) /* for <600px */
+{
+  .prj-wrapper {
+    display: grid;
+    grid-template-columns: 1fr; /*fract: 4 eq cols */
+  }
+  .prj-image {
+    padding: 16px;
+  }
+}
+@media (min-width:601px) /* for >601px */
+{
+  .prj-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*fract: 4 eq cols */
+  }
+  .prj-image {
+    padding: 8px;
+  }
+}
+@media (min-width:900px) /* for >900px */
+{
+  .prj-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*fract: 4 eq cols */
+  }
+  .prj-image {
+    padding: 10px;
+  }
+}
 /* END PROJECTS SECTION */
 
 
 /* FOOTER */
+.pg-footer {
 
+  color:inherit!important;
+  background-color:inherit!important;
 
+  text-align:center!important;
+  color:inherit!important;
+  background-color:inherit!important;
+  padding-top:16px!important;
+  padding-bottom:16px!important;
+  display:block;
+  width:auto;
+}
 /* END FOOTER */
