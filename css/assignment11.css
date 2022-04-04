@@ -1,0 +1,9 @@
+strong {
+  font-weight:900;
+}
+button {
+  transition:color 300ms ease-in-out!important;
+}
+.is-red {
+  color:red;
+}

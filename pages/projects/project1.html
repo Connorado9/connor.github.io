@@ -16,19 +16,23 @@
   <!-- Main CSS -->
   <link rel="stylesheet" href="../../css/styles.css" type="text/css">
   <!-- javascript -->
-  <script src="js/main.js"></script>
+  <script defer src="../../js/main.js"></script>
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../../img/favicon.ico">
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class=nav-hide>
-    <a href="../../index.html" class="navbar-item">HOME</a>
-    <a href="../resume.html" class="navbar-item">RESUME</a>
-    <a href="../projects.html" class="navbar-item">PROJECTS</a>
-    <a href="project1.html" class="navbar-item hide-small">PROJECT1</a>
-    <!--<a href="project2.html" class="navbar-item hide-small">PROJECT2</a>-->
+  <nav id="sidenavigation" class="sidenav">
+    <a href="../../index.html">HOME</a>
+    <a href="../resume.html">RESUME</a>
+    <a href="../projects.html">PROJECTS</a>
+    <a href="project1.html">PROJECT1</a>
+    <!--<a href="project2.html">PROJECT2</a>-->
   </nav>
+  <!-- Hamburger Icon -->
+  <span class="hamburger" id="burger">&#9776;</span>
+  <!-- Overlay -->
+  <div id="overlay"></div>
 
   <!-- Project -->
   <div class="prj1-landing">
@@ -71,5 +75,7 @@
       <a class="foot-text" href="https://www.instagram.com/connors.electronics/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a> <!-- JS here -->
     </div>
   </footer>
+
+  </div> <!-- Overlay: main content div for sidebar exit -->
 </body>
 </html>

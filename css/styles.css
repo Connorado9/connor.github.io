@@ -124,7 +124,7 @@ a:active { /* a link the moment it is clicked */
 }
 button {
   background-color:#1B1B1B;
-  color:#1B1B1B;
+  color:#FFFFFF;
   border:none;
   padding:7px 32px;
   text-align:center;
@@ -145,34 +145,69 @@ button {
 /* END RESPONSIVE DESIGN */
 
 
-/* NAVBAR */
-nav {
+/* NAVBAR & OVERLAY */
+#overlay {
   position:fixed;
+  display:none; /* initially no overlay */
   width:100%;
+  height:100%;
   top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0,0,0,0.5);
+  cursor:pointer;
+  z-index:2;
+}
+.sidenav {
+  height:100%;
+  width:0;
+  position:fixed;
+  top:0;
+  right:0;
   background-color:#FFFFFF;
   color:inherit;
-  overflow:hidden;
-  padding:8px 10px;
+  overflow-x:hidden;
+  padding-top:75px;
+  transition: 0.5s;
   text-align:center;
-  z-index:999;
+  z-index:10;
 }
-.nav-hide {
-  position:absolute;
+.hamburger {
+  position:fixed;
+  top:32px!important;
+  right:32px!important;
+  font-size:33px;
+  cursor:pointer;
+  right:0;
+  font-color:#1B1B1B;
 }
-.navbar-item {
+.sidenav a {
   /*float:right;*/
   font-family:"Montserrat",sans-serif;
   font-weight:400;
+  font-size:13px!important;
   letter-spacing:0.1em;
   text-decoration:none!important;
   background-color:inherit;
   color:inherit;
-  padding:8px 20px;
-  display:inline-block;
-  text-align:center;
+  padding-left:60px;
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-right:24px;
+  display:block;
+  text-align:left;
 }
-/* END NAVBAR */
+.sidenav a:hover {
+  background-color:inherit;
+  color:#969595;
+  /* transition? */
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/* END NAVBAR & OVERLAY */
 
 
 /* LANDING */
@@ -182,6 +217,7 @@ nav {
     position:relative;
     top:0;
     height:100vh;
+    z-index:-1;
   }
   .hero-image {
     position:relative;
@@ -199,7 +235,7 @@ nav {
     min-height:-webkit-fill-available;
     min-height:-moz-available;
     min-height:100%;*/
-    z-index:-1;
+    z-index:-2;
   }
 }
 @media (max-width:600px) /* for <600px */
@@ -208,6 +244,7 @@ nav {
     position:relative;
     top:0;
     height:100vh;
+    z-index:-1;
   }
   .hero-image {
     position:relative;
@@ -225,7 +262,7 @@ nav {
     background-size:cover;
     background-position:center center;
     background-attachment:local;
-    z-index: -1;
+    z-index: -2;
   }
 }
 .landing-text {
