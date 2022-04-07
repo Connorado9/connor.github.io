@@ -17,6 +17,21 @@ function closeNav() {
   console.log('hamburger clicked closed, overlay off'); /* for debugging, see console on browser */
 }
 
+/* Scrolling Event Listener */
+function windowLoaded () {
+  document.addEventListener('wheel',scrollEventFunction)
+}
+
+function scrollEventFunction(eventData){
+  console.log(eventData)
+}
+/*then find the delta*/
+
+/*const response await fetch(api url)
+
+
+window.onload = windowLoaded;
+
 /*
 function buttonClicked () {
   document.getElementById('button-11').classList.toggle('is-red');

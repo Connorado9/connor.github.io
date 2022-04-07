@@ -19,18 +19,21 @@ quoteButton.addEventListener('click', getQuote);
                           //looking for, what to happen
 
 const endpoint = 'https://catfact.ninja/fact';
+const dogpoint = 'https://dog-facts-api.herokuapp.com/api/v1/resources/dogs?number=1';
+const dogpic = 'https://dog.ceo/dog-api/';
 
 /* now we need to do something */
 async function getQuote() {
-  console.log("guote button was clicked"); /* debug */
+  console.log("quote button was clicked"); /* debug */
   try { /* tries something to see if there's an error */
-    const response = await fetch(endpoint);
+    const response = await fetch(dogpoint);
+
+    const json = await response.json(); // javascript object notiation (json is file format that is human and machine readable)
     if(!response.ok) {
       throw Error(response.statusText);
     }
-    const json = await response.json(); // javascript object notiation (json is file format that is human and machine readable)
     console.log(json);
-    displayQuote(json.fact);
+    displayQuote(json[0].fact); //json[0] for array
   } catch(err) { /* if there isnt, do something else instead */
     console.log(err);
     alert('Failed');
