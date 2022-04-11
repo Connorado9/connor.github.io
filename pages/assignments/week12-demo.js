@@ -35,7 +35,7 @@ async function getQuote() {
       throw Error(response.statusText);
     }
     console.log(json);
-    displayQuote(json[0].facts); //json[0] for array
+    displayQuote(json[0].fact); //json[0] for array
   } catch(err) { /* if there isnt, do something else instead */
     console.log(err);
     alert('Failed');
