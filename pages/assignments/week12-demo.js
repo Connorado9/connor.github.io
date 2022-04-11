@@ -25,7 +25,7 @@ const dogpic = 'https://dog.ceo/dog-api/';
 /* now we need to do something */
 async function getQuote() {
   console.log("quote button was clicked"); /* debug */
-  try { /* tries something to see if there's an error */
+  //try { /* tries something to see if there's an error */
     const response = await fetch(dogpoint);
 
     const json = await response.json(); // javascript object notiation (json is file format that is human and machine readable)
@@ -34,10 +34,10 @@ async function getQuote() {
     }
     console.log(json);
     displayQuote(json[0].fact); //json[0] for array
-  } catch(err) { /* if there isnt, do something else instead */
-    console.log(err);
-    alert('Failed');
-  }
+  //} catch(err) { /* if there isnt, do something else instead */
+  //  console.log(err);
+  //  alert('Failed');
+  //}
 }
 
 function displayQuote(quote) {
