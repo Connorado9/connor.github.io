@@ -601,45 +601,45 @@ button {
   #feat-all
   {
     /* grid-template-columns:1fr 1fr; */
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     /* grid-template-rows:1fr 1fr 1fr 1fr; */
-    margin-top:50px;
+    margin-top:0px;
     display:grid;
     align-items:center;
     grid-gap:50px 50px;/*row col*/
   }
   #feat-electrical
   {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     /* grid-template-rows:2fr; */
-    margin-top:50px;
+    margin-top:0px;
     display:grid;
     align-items:center;
     grid-gap:50px 50px;/*row col*/
   }
   #feat-computer
   {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-    grid-template-rows:1fr;
-    margin-top:50px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    /* grid-template-rows:1fr; */
+    margin-top:0px;
     display:grid;
     align-items:center;
     grid-gap:50px 50px;/*row col*/
   }
   #feat-design
   {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-    grid-template-rows:1fr;
-    margin-top:50px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    /* grid-template-rows:1fr; */
+    margin-top:0px;
     display:grid;
     align-items:center;
     grid-gap:50px 50px;/*row col*/
   }
   #feat-business
   {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-    grid-template-rows:1fr;
-    margin-top:50px;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    /* grid-template-rows:1fr; */
+    margin-top:0px;
     display:grid;
     align-items:center;
     grid-gap:50px 50px;/*row col*/
@@ -693,7 +693,7 @@ button {
     grid-gap:50px 50px;/*row col*/
   }
 }
-@media (min-width:450px) { /* mobile */
+@media (min-width:450px) { /* desktop */
   .feat-prj-col1
   {
     grid-column:1 / 2;
@@ -720,10 +720,10 @@ button {
   }
 }
 
+/* OLDDDDDD */
 .prj-w-display {
   display: grid;
 }
-/* OLDDDDDD *?
 @media (max-width:601px) /* for <600px */
 {
   .prj-wrapper {
