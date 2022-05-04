@@ -66,10 +66,7 @@ function showFeatBusiness()
 window.onload = showFeatAll;
 
 
-
-
-
-/* Scrolling Event Listener */
+/*** Scrolling Event Listener ***/
 function windowLoaded () {
   document.addEventListener('wheel',scrollEventFunction);
 }
