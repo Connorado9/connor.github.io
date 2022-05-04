@@ -25,7 +25,7 @@ function reveal() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight; //height of viewport
     var elementTop = reveals[i].getBoundingClientRect().top; //distance from top of viewport
-    var elementVisible = 150; //height at which the element should be revealed
+    var elementVisible = 100; //height at which the element should be revealed
 
     if (elementTop < windowHeight - elementVisible) { //trigger animation
       reveals[i].classList.add("active"); //display the element

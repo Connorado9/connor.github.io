@@ -1047,7 +1047,7 @@ button {
   .reveal {
     position:relative;
     opacity:0; /* hide until active class is added */
-    transform:translateY(300px);
+    transform:translateY(250px);
     transition:1s all ease;
   }
 }
