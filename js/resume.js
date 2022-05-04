@@ -19,8 +19,8 @@ function closeNav()
 
 
 /*** Resume Expereince vs Education Filter ***/
-window.onload = document.getElementById('edu-btn').addEventListener('click', showEducation);
-window.onload = document.getElementById('exp-btn').addEventListener('click', showExperience);
+document.getElementById('edu-btn').addEventListener('click', showEducation);
+document.getElementById('exp-btn').addEventListener('click', showExperience);
 function showExperience()
 {
   document.getElementById('exp-btn').style.color = "#1B1B1B";
