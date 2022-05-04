@@ -533,24 +533,6 @@ button {
   }
 }
 /* Featured Projects */
-@media (min-width:600px) {
-  .feat-prj-wrapper
-  {
-    margin-top:0px;
-    display:grid;
-    align-items:center;
-    grid-gap:50px 50px;/*row col*/
-  }
-}
-@media (max-width:600px) {
-  .feat-prj-wrapper
-  {
-    margin-top:50px;
-    display:grid;
-    align-items:center;
-    grid-gap:50px 50px;/*row col*/
-  }
-}
 .feat-prj-media
 {
   max-width:100%; /* resize based on size of div its in */
@@ -619,56 +601,96 @@ button {
   #feat-all
   {
     /* grid-template-columns:1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
     /* grid-template-rows:1fr 1fr 1fr 1fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-electrical
   {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
     /* grid-template-rows:2fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-computer
   {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* grid-template-rows:3fr; */
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows:1fr;
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-design
   {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* grid-template-rows:1fr; */
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows:1fr;
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-business
   {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* grid-template-rows:1fr; */
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows:1fr;
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
 }
 @media (max-width:450px) { /* mobile */
   #feat-all
   {
     /* grid-template-columns:1fr 1fr; */
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
     /* grid-template-rows:1fr 1fr 1fr 1fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-electrical
   {
     grid-template-columns:1fr;
     /* grid-template-rows:1fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-computer
   {
     grid-template-columns:1fr;
     /* grid-template-rows:1fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-design
   {
     grid-template-columns:1fr;
     /* grid-template-rows:1fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
   #feat-business
   {
     grid-template-columns:1fr;
     /* grid-template-rows:1fr; */
+    margin-top:50px;
+    display:grid;
+    align-items:center;
+    grid-gap:50px 50px;/*row col*/
   }
 }
 @media (min-width:450px) { /* mobile */
@@ -683,6 +705,7 @@ button {
   .feat-prj-row1
   {
     grid-row:1 / 2;
+    background-color:red;
   }
   .feat-prj-row2
   {
