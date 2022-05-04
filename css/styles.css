@@ -458,7 +458,7 @@ button {
   margin-bottom:30px;
 }
 @media (min-width:775px) { /* desktop */
-  .prj-sel {
+  .feat-prj-sel {
     font-size:22px!important;
     font-family:'Roboto',sans-serif;
     font-weight:100;
@@ -469,10 +469,11 @@ button {
     display:inline-block;
     text-decoration:none!important;
     flex-wrap:wrap;
+    cursor:pointer;
   }
 }
 @media (max-width:775px) { /* medium */
-  .prj-sel {
+  .feat-prj-sel {
     font-size:18px!important;
     font-family:'Roboto',sans-serif;
     font-weight:100;
@@ -483,10 +484,11 @@ button {
     display:inline-block;
     text-decoration:none!important;
     flex-wrap:wrap;
+    cursor:pointer;
   }
 }
 @media (max-width:600px) { /* mobile */
-  .prj-sel {
+  .feat-prj-sel {
     font-size:16px!important;
     font-family:'Roboto',sans-serif;
     font-weight:100;
@@ -497,10 +499,11 @@ button {
     display:inline-block;
     text-decoration:none!important;
     flex-wrap:wrap;
+    cursor:pointer;
   }
 }
 @media (max-width:500px) { /* mobile */
-  .prj-sel {
+  .feat-prj-sel {
     font-size:14px!important;
     font-family:'Roboto',sans-serif;
     font-weight:100;
@@ -511,10 +514,11 @@ button {
     display:inline-block;
     text-decoration:none!important;
     flex-wrap:wrap;
+    cursor:pointer;
   }
 }
 @media (max-width:400px) { /* mobile small*/
-  .prj-sel {
+  .feat-prj-sel {
     font-size:11px!important;
     font-family:'Roboto',sans-serif;
     font-weight:100;
@@ -525,6 +529,7 @@ button {
     display:inline-block;
     text-decoration:none!important;
     flex-wrap:wrap;
+    cursor:pointer;
   }
 }
 /* Featured Projects */
@@ -616,7 +621,7 @@ button {
   {
     /* grid-template-columns:1fr 1fr; */
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    /* grid-template-rows:1fr 1fr 1fr 1fr; */
+    grid-template-rows:1fr 1fr 1fr 1fr;
   }
   #feat-electrical
   {
@@ -643,27 +648,27 @@ button {
   #feat-all
   {
     /* grid-template-columns:1fr 1fr; */
-    grid-template-columns: 1fr;repeat(1, minmax(150px, 1fr));
-    /* grid-template-rows:1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
   }
   #feat-electrical
   {
-    grid-template-columns:2fr;
-    grid-template-rows:2fr;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
   }
   #feat-computer
   {
-    grid-template-columns:2fr;
-    grid-template-rows:3fr;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
   }
   #feat-design
   {
-    grid-template-columns:2fr;
+    grid-template-columns:1fr;
     grid-template-rows:1fr;
   }
   #feat-business
   {
-    grid-template-columns:2fr;
+    grid-template-columns:1fr;
     grid-template-rows:1fr;
   }
 }
@@ -683,6 +688,14 @@ button {
   .feat-prj-row2
   {
     grid-row:2 / 3;
+  }
+  .feat-prj-row3
+  {
+    grid-row:3 / 4;
+  }
+  .feat-prj-row4
+  {
+    grid-row:4 / 5;
   }
 }
 
@@ -805,6 +818,7 @@ button {
   display:inline-block;
   text-decoration:none!important;
   flex-wrap:wrap;
+  cursor:pointer;
 }
 #exp-btn {
   background-color:inherit!important;

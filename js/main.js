@@ -17,33 +17,65 @@ function closeNav()
   console.log('hamburger clicked closed, overlay off'); /* for debugging, see console on browser */
 }
 
-/*** Resume Expereince vs Education ***/
-document.getElementById('edu-btn').addEventListener('click', showEducation)
-document.getElementById('exp-btn').addEventListener('click', showExperience);
-function showExperience()
+/*** Featured Projects Filter ***/
+document.getElementById('feat-all-btn').addEventListener('click', showFeatAll);
+document.getElementById('feat-electrical-btn').addEventListener('click', showFeatElectrical);
+document.getElementById('feat-computer-btn').addEventListener('click', showFeatComputer);
+document.getElementById('feat-design-btn').addEventListener('click', showFeatDesign);
+document.getElementById('feat-business-btn').addEventListener('click', showFeatBusiness);
+function showFeatAll()
 {
-  document.getElementById('exp-btn').style.color = "#1B1B1B";
-  document.getElementById('edu-btn').style.color = "#969595";
-  document.getElementById('experience').style.display = "grid";
-  document.getElementById('education').style.display = "none";
+  document.getElementById('feat-all').style.display = "grid";
+  document.getElementById('feat-electrical').style.display = "none";
+  document.getElementById('feat-computer').style.display = "none";
+  document.getElementById('feat-design').style.display = "none";
+  document.getElementById('feat-business').style.display = "none";
 }
-function showEducation()
+function showFeatElectrical()
 {
-  document.getElementById('exp-btn').style.color = "#969595";
-  document.getElementById('edu-btn').style.color = "#1B1B1B";
-  document.getElementById('experience').style.display = "none";
-  document.getElementById('education').style.display = "grid";
+  document.getElementById('feat-all').style.display = "none";
+  document.getElementById('feat-electrical').style.display = "grid";
+  document.getElementById('feat-computer').style.display = "none";
+  document.getElementById('feat-design').style.display = "none";
+  document.getElementById('feat-business').style.display = "none";
 }
-window.onload = showExperience;
+function showFeatComputer()
+{
+  document.getElementById('feat-all').style.display = "none";
+  document.getElementById('feat-electrical').style.display = "none";
+  document.getElementById('feat-computer').style.display = "grid";
+  document.getElementById('feat-design').style.display = "none";
+  document.getElementById('feat-business').style.display = "none";
+}
+function showFeatDesign()
+{
+  document.getElementById('feat-all').style.display = "none";
+  document.getElementById('feat-electrical').style.display = "none";
+  document.getElementById('feat-computer').style.display = "none";
+  document.getElementById('feat-design').style.display = "grid";
+  document.getElementById('feat-business').style.display = "none";
+}
+function showFeatBusiness()
+{
+  document.getElementById('feat-all').style.display = "none";
+  document.getElementById('feat-electrical').style.display = "none";
+  document.getElementById('feat-computer').style.display = "none";
+  document.getElementById('feat-design').style.display = "none";
+  document.getElementById('feat-business').style.display = "grid";
+}
+window.onload = showFeatAll;
+
+
+
 
 
 /* Scrolling Event Listener */
 function windowLoaded () {
-  document.addEventListener('wheel',scrollEventFunction)
+  document.addEventListener('wheel',scrollEventFunction);
 }
 
 function scrollEventFunction(eventData){
-  console.log(eventData)
+  console.log(eventData);
 }
 /*then find the delta*/
 
