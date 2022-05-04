@@ -536,6 +536,11 @@ button {
 .feat-prj-media
 {
   max-width:100%; /* resize based on size of div its in */
+  transition: transform ease 0.2s;
+}
+.feat-prj-media:hover
+{
+  transform: scale(1.08);
 }
 .feat-prj-descr
 {
