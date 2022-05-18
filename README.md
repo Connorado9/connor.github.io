@@ -1,2 +1,2 @@
 # connorado9.github.io
-This repository will eventually become my personal site.
+Welcome to the back-end of my website portfolio! Built from scratch in HTML, CSS, and JavaScript, this website seeks to feature my most important projects.
